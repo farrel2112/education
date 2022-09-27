@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <title>Inscription scolaire</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formulaire d'inscription</h1>
+        <div class="row">
+            <form id="form1">
+                <h3>Informations de l'élève</h3>
+                <input type="text" placeholder="Nom de l'élève" id="lastName" required>
+                <input type="text" placeholder="Prénom de l'élève" id="firstName" required>
+                <input type="text" placeholder="Sexe" id="sex">
+                <input type="date" placeholder="Date de naissance" id="birth">
+                <input type="text" placeholder="Lieu de naissance" id="placeOfBirth">
+                <input type="text" placeholder="Classe" id="classe" required>
+                <div class="btn-box">
+                    <button type="button" id="suivant">Suivant</button>
+                </div>
+            </form>
+            <form id="form2">
+                <h3>Informations du tuteur légal</h3>
+                <input type="text" placeholder="Nom du tuteur" id="tutorLastName" required>
+                <input type="text" placeholder="Prénom du tuteur" id="tutorFirstName" required>
+                <input type="text" placeholder="Profession">
+                <input type="tel" placeholder="Numéro de téléphone" id="phone">
+                <input type="mail" placeholder="Adresse E-mail">
+                <div class="btn-box box2">
+                    <button type="button" id="retour">retour</button>
+                    <button type="submit" id="submit">Envoyer</button>
+                </div>
+            </form>
+
+        </div>
+        <div class="row line2">
+            <h3 id="list">Liste des inscrits</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom et prénom de l'élève</th>
+                        <th>Sexe</th>
+                        <th>Classe</th>
+                        <th>Nom et prénom du tuteur</th>
+                        <th>Numéro de téléphone</th>
+                    </tr>
+                </thead>
+                <tbody id="body">
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
